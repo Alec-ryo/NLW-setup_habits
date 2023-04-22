@@ -51,13 +51,13 @@ export function NewHabitForm() {
     return (
         <form onSubmit={createNewHabit} className="w-full flex flex-col mt-6">
             <label htmlFor="title" className="font-semibold leading-tight">
-                Qual seu comprometimento?
+                Add the habit
             </label>
 
             <input
                 type="text"
                 id="title"
-                placeholder="ex.: Exercícios, dormir bem, etc..."
+                placeholder="ex.: Exercises, Bed time, etc..."
                 className="p-4 rounded-lg mt-3 bg-zinc-800 text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-offset-2 focus:ring-offset-zinc-900"
                 autoFocus
                 value={title}
@@ -65,7 +65,7 @@ export function NewHabitForm() {
             />
 
             <label htmlFor="" className="font-semibold leading-tight mt-4">
-                Qual a recorrência?
+                Set the frequency
             </label>
 
             <div className="flex flex-col gap-2 mt-3">
@@ -97,7 +97,7 @@ export function NewHabitForm() {
                 className="mt-6 rounded-lg p-4 flex items-center justify-center gap-3 font-semibold bg-green-600 hover:bg-green-500 transition-all focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 focus:ring-offset-zinc-900"
             >                
                 <Check size={20} weight="bold"/>
-                Confirmar
+                Confirm
             </button>
 
         </form>
